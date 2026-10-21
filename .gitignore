@@ -1,0 +1,25 @@
+@"
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Entornos virtuales dentro de carpetas
+**/.venv/
+**/venv/
+
+# Herramientas y editores
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
