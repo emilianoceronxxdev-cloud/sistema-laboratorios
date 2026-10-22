@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from app.routers.laboratorios import router as laboratorios_router
-
+from app.routers.categorias_equipo import router as categorias_equipo_router
 
 app = FastAPI(
     title="Gestor de Inventario de Laboratorios",
@@ -9,3 +9,4 @@ app = FastAPI(
 )
 
 app.include_router(laboratorios_router)
+app.include_router(categorias_equipo_router)
